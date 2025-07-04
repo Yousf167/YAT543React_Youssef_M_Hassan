@@ -1,0 +1,16 @@
+h1
+{
+      text-align: center;
+}
+img
+{
+      width: 20%;
+      display: block;
+      margin: auto;
+      border-radius: 500%;
+}
+pre
+{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+}

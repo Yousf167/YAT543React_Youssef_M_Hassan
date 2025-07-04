@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Target Attribute Demo</title>
+      <style>
+            body
+            {
+                  background-color: azure;
+            }
+            iframe {
+                  width: 100%;
+                  height: 200px;
+                  border: 1px solid #000000;
+                  margin-top: 10px;
+            }
+
+            a {
+                  margin: 10px 0;
+            }
+      </style>
+</head>
+
+<body>
+
+      <h1>HTML &lt;a&gt; Target Demo</h1>
+
+      <!-- _self: Default, opens in same tab -->
+      <a href="https://example.com" target="_self">Open in _self (same tab)</a><br>
+
+      <!-- _blank: Opens in new tab -->
+      <a href="https://example.com" target="_blank">Open in _blank (new tab)</a><br>
+
+      <!-- _top: Breaks out of any iframes -->
+      <a href="https://example.com" target="_top">Open in _top (whole window)</a><br>
+
+      <!-- _parent: Opens in parent frame (visible only if inside iframe) -->
+      <a href="https://example.com" target="_parent">Open in _parent (parent frame)</a><br>
+
+      <!-- Custom target: iframe -->
+      <a href="https://example.com" target="customFrame">Open in custom iframe</a><br>
+
+      <!-- Named iframe -->
+      <iframe name="customFrame" title="Custom Frame"></iframe>
+
+      <iframe src="./frameB.html" width="100%" height="300"></iframe>
+
+</body>
+
+</html>
