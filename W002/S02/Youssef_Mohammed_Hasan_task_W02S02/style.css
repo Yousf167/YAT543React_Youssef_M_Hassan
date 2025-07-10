@@ -1,0 +1,236 @@
+/* Variables */
+:root
+{
+      /* General */
+      --light-text-color: white;
+      --dark-text-color: #2c3e50;
+
+      /* navbar */
+      --navbar-bgcolor: #2c3e50;
+
+      /* startbootstrap & about*/
+      --start-and-about-bgcolor: #1abc9c;
+
+}
+
+
+/* General */
+.middle-title
+{
+      text-align: center;
+}
+body
+{
+      background-color: white;
+      margin: 0%;
+      font-family: sans-serif;
+}
+.custom-hr-white
+{
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+      height: 0.3em;
+      width: 9%;
+      display: inline-block;
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+}
+.custom-hr-dark
+{
+      background-color: var(--dark-text-color);
+      border: none;
+      border-radius: 5px;
+      height: 0.3em;
+      width: 9%;
+      display: inline-block;
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+}
+.custom-separator {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+}
+
+[class="fa-solid fa-star"]
+{
+      display: inline-block;
+}
+
+
+/* navbar */
+nav
+{
+      z-index: 1000;
+      position: absolute;
+      background-color: var(--navbar-bgcolor);
+      top: 0;
+      width: 100%;
+      color: var(--light-text-color);
+      font-weight: 700;
+      display: flex;
+      position: fixed;
+}
+.nav-left
+{
+      display: flex;
+      width: fit-content;
+      padding-left: 5%;
+}
+.nav-right
+{
+
+      display: flex;
+      padding-left: 50%;
+}
+.nav-right p
+{
+      margin-right: 10%;
+}
+
+
+
+/* sections */
+#start-bootstrap
+{
+      padding-top: 10%;
+      padding-bottom: 10%;
+      background-color: var(--start-and-about-bgcolor);
+      color: var(--light-text-color);
+}
+
+
+#portfolio-section
+{
+      color: var(--dark-text-color);
+      align-content: center;
+      margin-top: 10%;
+}
+.portfolio-row img
+{
+      width: 20%;
+      padding: 5%;
+}
+
+
+#about
+{
+      background-color: var(--start-and-about-bgcolor);
+      color: var(--light-text-color);
+}
+#about h2
+{
+      padding-top: 10%;
+}
+#about p
+{
+      max-width: 40%;
+      display: inline-block;
+      text-align: left;
+      top: 0;
+}
+.about-left
+{
+      margin-right: 1%;
+      margin-left: 5%;
+}
+
+#about-download
+{
+      margin-bottom: 7%;
+      margin-top: 2%;
+      padding: 1.5%;
+      background-color: var(--start-and-about-bgcolor);
+      color: white;
+      border: 2px solid white;
+      border-radius: 5px;
+      font-size: medium;
+}
+
+
+#contact
+{
+      margin-top: 10%;
+      color: var(--dark-text-color);
+}
+
+input
+{
+      display: block;
+      width: 50%;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: large;
+      border: none;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.363);
+      padding-bottom: 1%;
+      margin-top: 3%;
+}
+#submit
+{
+
+      width: 6% !important;
+      border-radius: 7px;
+      padding: 1%;
+      color: white;
+      background-color: var(--start-and-about-bgcolor);
+      margin-bottom: 5%;
+}
+
+
+footer {
+      background-color: var(--dark-text-color);
+      color: white;
+      display: flex;
+      gap: 3vw;                  /* Space between the columns */
+      padding: 40px 0 20px 0;    /* Add some vertical padding */
+}
+
+
+.footer-buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+}
+.footer-buttons button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--dark-text-color);
+      color: white;
+      padding: 10%;
+      border-radius: 50%;
+      border-color: white;
+}
+.location
+{
+      margin-left: 10%;
+}
+.atw
+{
+      margin-left: 18.5%;
+}
+.about-freelancer
+{
+      margin-left: auto;
+      margin-right: 1%;
+}
+.about-freelancer p a
+{
+      color: #1abc9c;
+}
+.location, .about-freelancer, .atw
+{
+      text-align: center;
+}
+
+
+.copyright, .copyright p
+{
+      margin: 0;
+      padding: 1%;
+      text-align: center;
+      background-color: #1a252f;
+      color: white;
+}

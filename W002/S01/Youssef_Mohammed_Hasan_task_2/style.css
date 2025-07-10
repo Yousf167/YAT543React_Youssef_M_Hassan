@@ -1,0 +1,240 @@
+/* Variables */
+:root
+{
+      --right-margin: 7%;
+      --right-width: 25%;
+      --left-width: calc(100% - (var(--right-margin) + var(--right-width)) - 10%);
+      --navbar-height: 70px;
+      --signiture-red: #dc392d;
+      --pro-button: #daefed;
+}
+
+
+/* nav Styles */
+nav
+{
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.153);
+}
+nav p
+{
+      margin-right: 40px;
+}
+nav > ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      font-size: 12px;
+}
+nav > ul > li {
+      position: relative;
+      padding: 16.5px 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+}
+nav ul li ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      min-width: 200px;
+      z-index: 1000;
+}
+nav ul li:hover > ul {
+      display: block; 
+}
+nav img
+{
+      margin-left: 94px;
+}
+.nav-right ul
+{
+      list-style: none;
+      padding-right: 30px;
+      display: inline-flex;
+}
+.nav-right li
+{
+      width: fit-content;
+}
+.nav-right
+{
+      margin-left: 20%;
+}
+.nav-right button
+{
+      background-color: var(--signiture-red);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 15px;
+      padding-left: 15px;
+      color: white;
+      border-radius: 10px;
+      font-size: 12px;
+      border-style: none;
+}
+nav button:hover {
+      background-color: var(--signiture-red);
+}
+.dropdown
+{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 0;
+      border-radius: 9px;
+      border-style: solid;
+      border-width: 3px;
+      border-color: #fbfafa;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.197);
+      min-width:max-content;
+}
+.dropdown li {
+      padding: 10px;
+      list-style-type: none;
+      background-color: #ffffff;
+}
+.dropdown li:hover {
+      background-color: #b9cbdb;
+}
+[class="fa-solid fa-tags"]
+{
+      color: var(--signiture-red);
+}
+[class="fa-duotone fa-solid fa-brush"]
+{
+      color: var(--signiture-red);
+}
+[class="fa-duotone fa-solid fa-pen-ruler"]
+{
+      color: #0061f2;
+}
+[class="fa-brands fa-bootstrap"]
+{
+      color: #563d7c;
+}
+#ang1
+{
+      color: #e23237;
+}
+nav > ul > li:nth-child(5) > ul > li > i
+{
+      color: #a7aeb8;
+}
+.dropdown-header
+{
+      color: var(--signiture-red);
+      font-size: 10px;
+      font-weight: 600;
+}
+
+
+
+/* Right side */
+.right_side
+{
+      position: absolute; 
+      width: var(--right-width);
+      right: var(--right-margin);
+      z-index: 100;
+}
+.right_side button
+{
+      display: block;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 10px;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      border: none;
+}
+.info
+{
+      margin-top: 40px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.153);
+      border-radius: 15px;
+}
+.info-row
+{
+      padding-top: 10px;
+      padding-bottom: 10px;
+}
+.info-row-right
+{
+      float: right;
+}
+.download
+{
+      background-color: var(--signiture-red);
+      color: white;
+      margin-bottom: 4px;
+}
+.pro
+{
+      background-color: var(--pro-button);
+      color: #2cb983;
+      margin-top: 10px;
+}
+
+
+
+/* Left Side */
+.left_side
+{
+      width: var(--left-width);
+      padding-left: 30px;
+      
+}
+.styled_new
+{
+      background-color: var(--signiture-red);
+      color: white;
+      border-radius: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px
+};
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus 
+{
+      color: #dc292d !important;
+      text-decoration: none !important;
+      outline: none !important;
+}
+.left_side li
+{
+      margin-bottom: 10px;
+}
+
+
+/* General Rules */
+body
+{
+      padding-top: var(--navbar-height);
+      background-color: #f2f6fc;
+      font-family: sans-serif;
+
+}
+hr
+{
+      border: 0.5px solid rgba(211, 211, 211, 0.654);
+}
+.left_side, .right_side
+{
+      font-size: small;
+      font-weight: 400;
+}

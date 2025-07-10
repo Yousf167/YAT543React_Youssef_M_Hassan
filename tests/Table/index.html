@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <!-- <style>
+            :root
+            {
+                  --border: 1px solid black;
+                  --table-margin: 50%;
+                  --table-remaining-margin: calc((100% - var(--table-margin)) / 2);
+            }
+            body
+            {
+                  background-color: #d1d1d1;
+            }
+            table
+            {
+                  border: var(--border);
+                  border-collapse: collapse;
+                  width: var(--table-margin);
+                  margin-left: var(--table-remaining-margin);
+            }
+            td
+            {
+                  border: var(--border);
+                  border-collapse: collapse;
+                  text-align: center;
+            }
+            caption
+            {
+                  border: var(--border);
+            }
+            th
+            {
+                  border: var(--border);
+                  border-top: none;
+            }
+            tr:nth-child(even)
+            {
+                  background-color: #656565;
+            }
+      </style> -->
+</head>
+<body>
+      <table id="employeeTable" class="styled-table" summary="Employee information table" aria-label="Employee Data" border="1" cellspacing="0" cellpadding="4">
+            <caption lang="en" style="caption-side:top; font-weight:bold;">Big Table Example</caption>
+            <colgroup>
+                  <col span="1" style="background-color:#f2f2f2;" />
+                  <col span="2" class="highlight" />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col style="background-color:#e0e0e0;" />
+            </colgroup>
+            <thead>
+                  <tr>
+                        <th scope="col" abbr="Number" title="Row Number">#</th>
+                        <th scope="col" abbr="First" title="First Name">First Name</th>
+                        <th scope="col" abbr="Last" title="Last Name">Last Name</th>
+                        <th scope="col" abbr="Email" title="Email Address">Email</th>
+                        <th scope="col" abbr="Country" title="Country of Residence">Country</th>
+                        <th scope="col" abbr="Age" title="Age in Years">Age</th>
+                        <th scope="col" abbr="Status" title="Employment Status">Status</th>
+                        <th scope="col" abbr="Score" title="Performance Score">Score</th>
+                        <th scope="col" abbr="Joined" title="Date Joined">Joined</th>
+                        <th scope="col" abbr="Notes" title="Additional Notes">Notes</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <th scope="row" headers="Number">1</th>
+                        <td headers="First">John</td>
+                        <td headers="Last">Doe</td>
+                        <td headers="Email"><a href="mailto:john.doe@example.com">john.doe@example.com</a></td>
+                        <td headers="Country">USA</td>
+                        <td headers="Age" data-label="Age">28</td>
+                        <td headers="Status">Active</td>
+                        <td headers="Score">95</td>
+                        <td headers="Joined">2021-01-15</td>
+                        <td headers="Notes" rowspan="2">Top performer<br><em>Special mention</em></td>
+                  </tr>
+                  <tr>
+                        <th scope="row">2</th>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td><a href="mailto:jane.smith@example.com">jane.smith@example.com</a></td>
+                        <td>Canada</td>
+                        <td>34</td>
+                        <td>Inactive</td>
+                        <td>88</td>
+                        <td>2020-11-23</td>
+                        <!-- Notes cell merged above -->
+                  </tr>
+                  <tr>
+                        <th scope="row">3</th>
+                        <td>Ali</td>
+                        <td>Hassan</td>
+                        <td><a href="mailto:ali.hassan@example.com">ali.hassan@example.com</a></td>
+                        <td>Egypt</td>
+                        <td>41</td>
+                        <td>Active</td>
+                        <td>77</td>
+                        <td>2019-07-09</td>
+                        <td>Remote worker</td>
+                  </tr>
+                  <tr>
+                        <th scope="row">4</th>
+                        <td>Maria</td>
+                        <td>Garcia</td>
+                        <td><a href="mailto:maria.garcia@example.com">maria.garcia@example.com</a></td>
+                        <td>Spain</td>
+                        <td>29</td>
+                        <td>Active</td>
+                        <td>82</td>
+                        <td>2022-03-12</td>
+                        <td>Promoted</td>
+                  </tr>
+                  <tr>
+                        <th scope="row">5</th>
+                        <td>Chen</td>
+                        <td>Wang</td>
+                        <td><a href="mailto:chen.wang@example.com">chen.wang@example.com</a></td>
+                        <td>China</td>
+                        <td>36</td>
+                        <td>Inactive</td>
+                        <td>69</td>
+                        <td>2018-10-30</td>
+                        <td>Transferred</td>
+                  </tr>
+                  <tr>
+                        <th scope="row">6</th>
+                        <td>Fatima</td>
+                        <td>Al-Farsi</td>
+                        <td><a href="mailto:fatima.alfarsi@example.com">fatima.alfarsi@example.com</a></td>
+                        <td>UAE</td>
+                        <td>27</td>
+                        <td>Active</td>
+                        <td>91</td>
+                        <td>2021-06-18</td>
+                        <td>Team lead</td>
+                  </tr>
+                  <tr>
+                        <th scope="row">7</th>
+                        <td>Lucas</td>
+                        <td>Silva</td>
+                        <td><a href="mailto:lucas.silva@example.com">lucas.silva@example.com</a></td>
+                        <td>Brazil</td>
+                        <td>32</td>
+                        <td>Active</td>
+                        <td>85</td>
+                        <td>2020-02-27</td>
+                        <td>Mentor</td>
+                  </tr>
+                  <tr>
+                        <th scope="row">8</th>
+                        <td>Sophia</td>
+                        <td>Lee</td>
+                        <td><a href="mailto:sophia.lee@example.com">sophia.lee@example.com</a></td>
+                        <td>South Korea</td>
+                        <td>25</td>
+                        <td>Active</td>
+                        <td>93</td>
+                        <td>2022-09-05</td>
+                        <td>New hire</td>
+                  </tr>
+                  <tr>
+                        <th scope="row">9</th>
+                        <td>Ahmed</td>
+                        <td>Ali</td>
+                        <td><a href="mailto:ahmed.ali@example.com">ahmed.ali@example.com</a></td>
+                        <td>Saudi Arabia</td>
+                        <td>38</td>
+                        <td>Inactive</td>
+                        <td>74</td>
+                        <td>2017-12-14</td>
+                        <td>Retired</td>
+                  </tr>
+                  <tr>
+                        <th scope="row">10</th>
+                        <td>Emma</td>
+                        <td>Johnson</td>
+                        <td><a href="mailto:emma.johnson@example.com">emma.johnson@example.com</a></td>
+                        <td>UK</td>
+                        <td>31</td>
+                        <td>Active</td>
+                        <td>89</td>
+                        <td>2019-05-21</td>
+                        <td>Trainer</td>
+                  </tr>
+                  <tr>
+                        <td colspan="10" style="text-align:center; background:#ccc;">End of Data</td>
+                  </tr>
+            </tbody>
+            <tfoot>
+                  <tr>
+                        <td colspan="5" headers="Number First Last Email Country" style="font-weight:bold;">Total: 10 entries</td>
+                        <td colspan="5" headers="Age Status Score Joined Notes" style="font-style:italic;">Last updated: <time datetime="2024-06-01">June 1, 2024</time></td>
+                  </tr>
+            </tfoot>
+      </table>
+</body>
+</html>
