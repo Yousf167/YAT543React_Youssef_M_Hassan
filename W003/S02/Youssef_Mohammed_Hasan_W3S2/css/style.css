@@ -1,0 +1,244 @@
+/* Imports */
+@import url('./config.css');
+
+/* general */
+a:hover{
+      cursor: pointer;
+}
+
+section{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 0 6rem 0;
+}
+.white-bg{
+      color: #2c3e50;
+}
+.green-bg{
+      color: white;
+      background-color: var(--green);
+}
+section h1{
+      font-size: 4rem;
+      font-weight: 900;
+      text-align: center;
+}
+section{
+      display: flex;
+}
+.white-separator, .dark-separator{
+      width: 20rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 3rem 0 3rem 0;
+}
+.white-separator div, .dark-separator div{
+      width: 40%;
+      height: 4px;
+      border-radius: 13px;
+      display: inline-block;
+}
+.white-separator div{
+      background-color: white;
+}
+.dark-separator div{
+      background-color: var(--dark-color);
+}
+.white-separator{
+      color: white;
+}
+.dark-separator{
+      color: var(--dark-color);
+}
+section div i{
+      font-size: 2rem;
+}
+h2{
+      font-size: 3rem;
+      text-align: center;
+}
+address{
+      all: unset;
+}
+
+
+/* Vars */
+:root{
+      --dark-color: #2c3e50;
+      --green: #1abc9c;
+      --copyright-bg: #1a252f
+}
+
+
+/* navbar */
+nav{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      background-color: var(--dark-color);
+      color: white;
+      position: fixed;
+      width: 100%;
+      padding: 2vw 1vw;
+}
+nav .left{
+      font-weight: 900;
+      margin-left: 4rem;
+}
+nav .right{
+      margin-right: 4rem;
+      display: flex;
+      justify-content: space-evenly;
+      width: 22%;
+}
+nav .right a, a:visited a:hover{
+      color: white;
+      font-weight: 900;
+}
+
+
+/* start */
+#start{
+      padding-top: 12rem;
+}
+#start img{
+      width: 15rem;
+}
+#start p{
+      font-size: clamp(1.2rem, 1.6vw, 2rem);
+}
+
+
+/* porfolio */
+section div img{
+      width: clamp(20rem, 20rem, 26rem);
+      border-radius: 0.6rem;
+}
+#portfolio{
+      padding: 4rem 0 4rem 0;
+      justify-content: center;
+}
+#port-images{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1300px;
+}
+
+
+/* about */
+#about{
+      font-size: 1.25rem;
+}
+#about-info{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: top;
+      padding: 0 3rem;
+}
+#about p{
+      max-width: 26rem;
+}
+#about a{
+      border: 2px solid white;
+      padding: 1rem 1.75rem;
+      border-radius: 0.6rem;
+      margin-top: 3rem;
+      transition: background-color 0.1s linear, color 0.1s linear;
+}
+#about a:hover{
+      background-color: white;
+      color: black;
+}
+
+
+/* Contact */
+form{
+      display: flex;
+      flex-direction: column;
+      width: clamp(350px, 50vw, 1000px);
+      gap: 2rem;
+}
+input, textarea{
+      all: unset;
+      height: 5rem;
+      font-size: 1.5rem;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.249);
+      resize: vertical;
+      min-height: 5rem;
+      overflow-x: hidden;   
+      white-space: pre-wrap;
+      word-wrap: break-word;
+}
+textarea{
+      height: 10rem;
+}
+form > input:nth-child(5){
+      text-align: center;
+      border: none;
+      width: 120px;
+      background-color: var(--green);
+      color: white;
+      border-radius: 0.5rem;
+}
+
+
+/* footer */
+footer{
+      padding: 4rem 0;
+      display: flex;
+      background-color: var(--dark-color);
+      color: white;
+      justify-content: space-evenly;
+      align-items: flex-start;   /* Use flex-start for top alignment */
+      flex-wrap: wrap;
+      min-height: 8rem;          /* Minimum height, grows with content */
+      height: auto;              /* Let height be determined by content */
+}
+footer p, footer address, footer a{
+      font-size: 1.25rem;
+}
+h3{
+      font-size: 1.5rem;
+      font-weight: 900;
+}
+footer > div{
+      width: 25rem;
+      height: 7rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 3rem 0;
+}
+footer .footer-links{
+      display: flex;
+      justify-content: center;
+      gap: 0.7rem
+}
+footer a.round{
+      font-size: 20px;
+      padding: 0.9rem;
+      border: 2px solid white;
+      border-radius: 100%;
+      transition: background-color 0.1s linear, color 0.1s linear;
+}
+footer a.round:hover{
+
+      background-color: white;
+      color: black;
+}
+
+/* copyright */
+.copyright{
+      background-color: #1a252f;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+}

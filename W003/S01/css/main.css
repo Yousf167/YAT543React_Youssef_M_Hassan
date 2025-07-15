@@ -1,0 +1,49 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
+
+/* Include Font */
+@font-face {
+    font-family: "Rubik";
+    src: url('../assets/static/Rubik-Regular.ttf');
+}
+
+@font-face {
+    font-family: "X";
+    src: url("../assets/static/Rubik-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Winky Rough";
+    src: url("../assets/Winky_Rough/static/WinkyRough-Regular.ttf");
+}
+
+h1 {
+    color: orange;
+    color: #F4623A;
+    color: rgba(61, 53, 37 , 1);
+    color: rgb(110, 188, 100);
+    color: rgb(0, 136, 0);
+    color: rgba(255, 0, 0, 1);
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Rubik", sans-serif;
+    font-family: "Winky Rough", sans-serif;
+
+}
+
+p {
+    /* text-indent: 50px;
+    /* word-spacing: 20px; */
+    /* letter-spacing: 20px; 
+    line-height: 30px; */
+
+    /* font-size: 32px;
+    font-weight: bold; */
+
+    font-family: fantasy;
+    font-family: "Rubik", sans-serif;
+    font-family: "Winky Rough" , sans-serif;
+    font-style: normal;
+}
+
+

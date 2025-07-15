@@ -19,6 +19,11 @@
 {
       text-align: center;
 }
+
+h2
+{
+      font-size: 3vh;
+}
 body
 {
       background-color: white;
@@ -123,31 +128,37 @@ nav
 {
       padding-top: 10%;
 }
-#about p
+.about-info
 {
-      max-width: 40%;
-      display: inline-block;
+      display: flex;
+      align-items: top;
+      justify-content: center;
       text-align: left;
-      top: 0;
+      gap: 1%;
 }
-.about-left
+.about-info p
 {
-      margin-right: 1%;
-      margin-left: 5%;
+      max-width: 25%;
 }
-
 #about-download
 {
+      text-decoration: none;
       margin-bottom: 7%;
       margin-top: 2%;
-      padding: 1.5%;
+      padding: 1% 1.5% 1% 1.5%;
       background-color: var(--start-and-about-bgcolor);
-      color: white;
-      border: 2px solid white;
+      color: rgb(255, 255, 255);
+      border: 2px solid rgb(255, 255, 255);
       border-radius: 5px;
       font-size: medium;
+      transition: background-color 0.1s linear, color 0.1s linear;
 }
-
+#about-download:hover
+{
+      background-color: white;
+      color: black;
+      cursor: pointer;
+}
 
 #contact
 {
@@ -183,38 +194,32 @@ footer {
       background-color: var(--dark-text-color);
       color: white;
       display: flex;
-      gap: 3vw;                  /* Space between the columns */
-      padding: 40px 0 20px 0;    /* Add some vertical padding */
-}
-
-
-.footer-buttons {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-}
-.footer-buttons button {
-      display: flex;
+      justify-content: space-between;
       align-items: center;
+      height: auto;
+}
+
+
+.footer-links {
+      display: flex;
       justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 2%;
+}
+.footer-links i {
       background-color: var(--dark-text-color);
-      color: white;
-      padding: 10%;
+      border: 2px solid white;
+      padding: 4%;
       border-radius: 50%;
-      border-color: white;
+      font-size: 20px;
+      transition: background-color 0.1s linear, color 0.1s linear;
 }
-.location
+.footer-links i:hover
 {
-      margin-left: 10%;
-}
-.atw
-{
-      margin-left: 18.5%;
-}
-.about-freelancer
-{
-      margin-left: auto;
-      margin-right: 1%;
+      background-color: white;
+      color: var(--dark-text-color);
+      cursor: pointer;
 }
 .about-freelancer p a
 {
@@ -223,6 +228,8 @@ footer {
 .location, .about-freelancer, .atw
 {
       text-align: center;
+      margin: 5% 2% 5% 2%;
+      min-width: 25%;
 }
 
 
