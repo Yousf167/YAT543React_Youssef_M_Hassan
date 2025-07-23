@@ -1,0 +1,20 @@
+div{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+}
+img{
+      transition: all 0.6s ease-in-out;
+      width: 500px;
+      border-radius: 2rem;
+}
+
+img:nth-child(even):hover{
+      transform: scale(1.2);
+}
+
+img:nth-child(odd):hover{
+      transform: rotate(180deg);
+}

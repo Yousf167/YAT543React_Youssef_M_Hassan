@@ -1,0 +1,25 @@
+/* 
+    Descendant Combinator
+    Every Div inside Header
+*/
+header p {
+    color: blue;
+}
+/* Child Combinator
+    p => Direct Child
+*/
+header > p {
+    color: red;
+}
+/* Next Sibling Combinator
+    First P After Header
+*/
+header + p {
+    color: green;
+}
+/* Subsequent Sibling Combinator ~
+    Every P After Header
+*/
+header ~ p {
+    color: aqua;
+}

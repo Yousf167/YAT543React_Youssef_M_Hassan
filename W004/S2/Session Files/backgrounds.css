@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2d2d2d;
+    height: 300vh;
+    /* background-image: linear-gradient(to right , red ,
+     green , yellow , orange);
+    background-image: url('./img/bg-masthead.jpg');*/
+    
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+    /* background: #ddd url() no-repeat fixed left bottom; */
+    /* 
+        Background-color
+        Background-image
+        Background-Repeat
+        Background-Attachment
+        Background-Position
+    */
+    /* background: linear-gradient(to right , rgba(55 , 100 , 88) 0% , rgba(44 , 55 , 110) 100%) , 
+    url('./img/bg-masthead.jpg') ; */
+    /* background : linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), 
+    url(./img/bg-masthead.jpg); */
+        background-image:url('./img/bg-masthead.jpg');
+     background-repeat: no-repeat;  
+    /* contain vs cover */
+    /* Vendor Prefixes */
+    /* -webkit-transition: all 2s ease-in-out; /* chrome edge safari*/
+    /* -moz-transition: all 2s ease-in;
+    -o-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out; */ 
+
+    /* Render Engine Css 
+        prefix =>apply css property  
+        -moz- 
+        -webkit
+
+        Javascript
+            JS Engine  => V8ENGINE 
+                        => SpiderMonkey 
+    */
+}

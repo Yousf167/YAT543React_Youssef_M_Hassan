@@ -1,0 +1,17 @@
+- Backgrounds 
+- Positions 
+- Vendor Prefixes
+- rem vs em vs px
+- Animations
+- Transition
+- Transformation 
+- Shadow
+==================================
+Media Query + Grid + Bootstrap [Reponsive Design]
+
+====================================================
+
+[]          []
+ 
+
+[]    

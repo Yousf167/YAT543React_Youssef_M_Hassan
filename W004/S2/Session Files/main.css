@@ -1,0 +1,27 @@
+div {
+    background-color: #2d2d2d;
+    width: 100px;
+    height: 100px;
+    animation-name: change-div-color;
+    animation-duration: 5s;
+    animation-iteration-count : infinite;
+    /* animation-delay: 1s; */
+    animation-timing-function: ease-in-out;
+    /* animation-direction: alternate-reverse; */
+    position: relative;
+}
+
+
+/* @keyframes change-div-color {
+    from {background-color: #2d2d2d;}
+    to {background-color: blue;}
+} */
+
+@keyframes change-div-color {
+    0%  {background-color: aqua; top: 0; left: 0;}
+    25% {background-color: red; top: 0; left: 300px;}
+    50% {background-color: blue; top: 300px; left: 300px;}
+    75% {background-color: orange; top: 300px; left: 0;}
+    100% {background-color: seagreen; top: 0; left:0}
+}
+

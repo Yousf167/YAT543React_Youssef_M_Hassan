@@ -1,0 +1,17 @@
+- Css Variables 
+- Import 
+- Float And Clear
+- Display (inline vs block vs inline-block) 
+- Psuedo Class 
+- Psuedo Element 
+- Css Combinators
+- Lists 
+- FlexBox (Parent)
+==============================================
+Next Session
+- Background 
+- Postions
+- Z-index
+- Transitios And Animations And Transformations 
+or Media Query
+===============================================

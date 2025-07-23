@@ -1,0 +1,10 @@
+:root {
+    --main-font-family : "Lato", sans-serif;
+    --dark-color : #2C3E50;
+    --light-green-color : #1ABC9C;
+    --fs-1 : 4rem; /* 1rem = 16px  4 * 16 = 64*/
+    --fs-2 : 3rem;
+    --fs-3 : 2rem;
+    --fs-4 : 1rem;
+    --fw-bolder : bolder;
+}

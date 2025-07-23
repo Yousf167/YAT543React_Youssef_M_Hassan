@@ -1,0 +1,74 @@
+body > div{
+      width:  900px;
+      height: 900px;
+      border: 2px solid black;
+      margin: auto;
+      position: relative;
+}
+
+@keyframes triangle{
+      0%   {left: 0; top: 0;}
+      33%  {left: 0; top: 765px}
+      66%  {left: 90%; top: 0;}
+      100% {left: 0; top: 0;}
+}
+
+@keyframes triangle2 {
+      0%   {top: 0;     left: 0;}
+      33%  {top: 765px; left: 90%}
+      66%  {top: 0;     left: 90%}
+      100% {top: 0;     left: 0;}
+}
+
+@keyframes square{
+      0%   {top: 0;      left: 0;}
+      25%  {top: 765px;  left: 0;}
+      50%  {top: 765px;  left: 90%;}
+      75%  {top: 0;      left: 90%;}
+      100% {top: 0;      left: 0;}
+}
+
+div > div{
+      width: 10%;
+      height: 15%;
+}
+
+.box1{
+      position: absolute;
+      background-color: crimson;
+      left: 0;
+      top: 0;
+      animation-name: triangle;
+      animation-duration: 3s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+}     
+.box2{
+      position: absolute;
+      left: 90%;
+      background-color: blue;
+      animation-name: triangle;
+      animation-direction: alternate-reverse; 
+      animation-duration: 3s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+}
+.box3{
+      position: absolute;
+      left: 90%;
+      background-color: rgb(0, 255, 119);
+      animation-name: triangle2; 
+      animation-duration: 3s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+}
+.box4{
+      position: absolute;
+      left: 90%;
+      background-color: rgb(157, 0, 255);
+      animation-name: square; 
+      animation-duration: 4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}

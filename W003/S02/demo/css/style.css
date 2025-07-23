@@ -1,0 +1,56 @@
+@import url('./reset.css');
+@import url('./variables.css');
+
+body {
+    font-family: var(--main-font-family) !important;
+}
+
+/* Navbar Style */
+nav { 
+    background-color: var(--dark-color);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/* nav .brand {
+    float: left;
+}
+nav .links {
+    float: right;
+} */
+nav > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .brand a {
+    font-size: var(--fs-3);
+    font-weight: var(--fw-bolder);
+    color: var(--light-green-color);
+}
+nav .brand a:hover {
+    color: #fff;
+}
+
+nav .links ul li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin-top: .3rem; */
+}
+
+nav .links ul li a {
+    font-size: 1.5rem;
+}
+nav .links ul li a:hover {
+    color: var(--light-green-color);
+}
+/* nav .links ul li a:visited {
+    color: orange;
+} */
+/* Psuedo Class 
+    based on state 
+    element:hover element:active a:visited  a:link
+    button
+*/
