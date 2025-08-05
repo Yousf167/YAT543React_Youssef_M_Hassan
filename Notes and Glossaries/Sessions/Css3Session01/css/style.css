@@ -1,0 +1,31 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    color: #fff;
+    background-color: #2d2d2d;
+    width: 500px;
+    height: 380px; /* Based On Content 
+    margin: 100px 50px 40px 100px; top right bottom left*/
+    margin: 100px auto;
+    /* padding: 20px 10px 5px 30px; */
+    padding: 30px 40px;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+    border: 10px solid orange; */
+    /* border-right: 14px solid #ccc; */
+    outline: 10px dashed #888;
+    box-sizing: border-box;
+}
+
+/*
+    padding + border => Affect width and height
+    width = initialWidth + padding(left + right) + border(left + right
+          = 500 + 80 + 20 = 600px
+    Height = initHeight + padding(top , bootom) + border(top , bottom)
+            = 380 + 60 + 20 = 460px 
+    */

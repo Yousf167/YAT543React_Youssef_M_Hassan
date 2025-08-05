@@ -1,0 +1,38 @@
+input[type="text"] {
+    background-image: url('./spellbook.png');
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
+    padding: 14px 21px 14px 80px;
+}
+
+input[type="text"] , 
+input[type="password"] {
+    display: block;
+    width: 300px;
+    height: 80px;
+    color: red;
+}
+
+input[type="password"]:focus {
+    width: 100%;
+}
+
+input[type="text"]::placeholder {
+    color: seagreen;
+}
+
+a[target="_blank"] {}
+
+img[alt ~= "image"] {}
+
+p[class ^= "test"] {}
+
+p[class $= "test"] {}
+
+p[class *= "tes"] {
+
+}
+
+textarea {
+    resize: none;
+}

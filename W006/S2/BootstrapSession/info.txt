@@ -1,0 +1,48 @@
+ xs  extra small
+        sm  small
+        md  medium
+        lg  large
+        xl  extra large
+        xxl extra extra large
+
+Margin and Padding (Spacing)
+m => margin   , p => Padding
+mt   => top              
+mb   => bottom
+ms   => start left
+me   => end   right
+mx   => left , right
+my   => top , bottom
+m-auto 
+16px 1rem   
+p-0     =>  spacer * number => 1rem * 0 = 0
+p-1     =>  spacer * .25    => .25rem => 4px
+p-2     => spacer * .5      => .5rem => 8px
+p-3     => spacer * 1       => 1rem
+p-4     => spacer * 1.5     => 1.5rem
+p-5    => spacer * 3        => 3rem
+
+===========================
+font size 
+fs-1 2 3 4 5 6  task
+
+margin-left auto   ======================== []
+margin-right-auto  [] =======================
+margin-x-auto          ======   [] ========
+
+
+d-flex   justify-content-space-between
+
+===============================================
+Grid   
+row => 12 col
+4 div
+
+12 / 4 = 3
+12 / 2 = 6
+12 / 1 = 12
+
+col-lg-3 col-md-6 col-sm-12
+col-lg-4 col-sm-12
+
+https://getbootstrap.com/docs/5.3/layout/gutters/

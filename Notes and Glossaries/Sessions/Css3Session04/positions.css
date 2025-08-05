@@ -1,0 +1,94 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2000px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {list-style: none;}
+a {text-decoration: none; color:#fff}
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Navbar Style */
+nav  {
+    background-color: #2d2d2d;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    position: sticky;
+    top: 0;
+}
+
+nav > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .brand a {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+nav .links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+}
+nav .links ul li a {
+    font-size: 1.4rem;
+}
+/* Header Style */
+header {
+    margin-top: 200px;
+}
+
+header .box1 , 
+header .box2 {
+    text-align: center;
+    height: 300px;
+    width: 400px;
+}
+header .box1 p ,
+header .box2 p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+header .box1 {
+    background-color: #2d2d2d;
+    color: #fff;
+    position: relative;
+    top: 120px;
+    left: 100px;
+    z-index: 9999;
+}
+header .box1 button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+header .box2 {
+    background-color: #ccc;
+    color: #2d2d2d;
+    z-index: 2;
+}
+
+
+
+header > div {
+    display: flex;
+    justify-content: center;
+}
+
+/* 
+    static => default not affected by top , bottom . right . left
+    top : 100px
+    left :
+*/

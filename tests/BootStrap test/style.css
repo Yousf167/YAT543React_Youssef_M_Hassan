@@ -1,0 +1,12 @@
+.custom-button {
+  background-color: black !important;
+  border: none;
+  padding: 0.5rem;
+}
+
+.custom-button .navbar-toggler-icon {
+  background-image: none !important;
+  background-color: white; /* optional fallback icon */
+  width: 1.5rem;
+  height: 1.5rem;
+}

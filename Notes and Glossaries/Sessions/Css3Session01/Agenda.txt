@@ -1,0 +1,23 @@
+- Text And Fonts
+    - color 
+    - font-style
+    - font-size 
+    - text-align 
+    - text-decoration
+    - word spacing and letter spacing
+    - line Height
+    - font family
+- Google Fonts And FontAwesome
+- Backgrounds 
+    - Background-color
+- Box-Model
+    - Width
+    - Height 
+    - Border vs Outline
+    - Margin 
+    - Padding
+- Box-sizing (Border-box , Content-Box)
+
+
+important Links
+https://www.colorzilla.com/chrome/

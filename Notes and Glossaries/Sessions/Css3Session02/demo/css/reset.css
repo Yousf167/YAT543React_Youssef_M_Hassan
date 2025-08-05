@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    /* list-style-type: none; */
+    /* list-style: none; */
+    /* list-style-type: none; */
+    /* list-style-image: url('../assets/images/spellbook.png');
+    list-style-position: outside; */
+    list-style: none;
+}
+
+a {text-decoration: none; color: #fff;}
+
+/* Utility Class */
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.clearfix {
+    clear: both;
+}
