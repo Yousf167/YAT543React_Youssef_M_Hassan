@@ -1,0 +1,18 @@
+1- برنامج بياخد رقمين من اليوزر
+ ويجمعهم ويطرحهم ويضربهم ويقسمهم
+
+2- Check number is even or odd
+
+3- Check number is positive or negative
+
+4- Calculate Circle Area And Circumference
+    area = pi * r ^ 2 
+    Circumference = 2 * pi * radius
+
+5- return true if num % 3 and 5 otherwise false
+
+6- Calculate Area and Perimeter 
+    a- Rectangle
+    b- Square
+
+7- price = 5000  taxRatio = .14    PriceAfterTax ??

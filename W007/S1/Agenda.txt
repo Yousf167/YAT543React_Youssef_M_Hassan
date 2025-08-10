@@ -1,0 +1,13 @@
+Introduction
+    - Compiler vs Interpreter Javascript
+Javascript 
+    - Variables 
+    - Data Types 
+    - Operators 
+    - Conditions
+        - if .. else
+        if(condition) {
+        *  // statements
+        * }else {
+        *  // statements
+        * }
