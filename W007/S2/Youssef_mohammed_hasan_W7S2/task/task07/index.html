@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <script>
+            let x = parseInt(prompt("Enter the number: "))
+            let message = "The number is a multiple of "
+            if(x % 5 == 0 && x % 8 == 0){
+                  message += "both 5 and 8"
+            }
+            else if(x % 5 == 0 && x % 8 != 0){
+                  message += "5"
+            }
+            else if(x % 5 != 0 && x % 8 == 0){
+                  message += "8"
+            }
+            alert(message)
+      </script>
+</body>
+</html>

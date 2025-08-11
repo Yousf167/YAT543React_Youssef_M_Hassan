@@ -1,0 +1,1 @@
+the task folders with only a script file where run using the code runner extension with terminal outputs

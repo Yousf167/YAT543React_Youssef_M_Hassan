@@ -1,0 +1,27 @@
+html{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+body{
+      background-color: #303e4c;
+}
+.calculator {
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #212529;
+  border-radius: 10px;
+  align-self: center;
+}
+.btn {
+  height: 60px;
+  font-size: 1.4rem;
+}
+#display {
+  height: 60px;
+  font-size: 1.8rem;
+  text-align: right;
+  padding-right: 10px;
+}
