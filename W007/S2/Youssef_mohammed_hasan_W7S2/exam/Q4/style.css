@@ -1,0 +1,124 @@
+/* General settings */
+:root{
+      --primary: #71caff;
+      --gray-text: #9a9a9a;
+}
+*, *:before, *:after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+a, a:visited, a:active{
+      color: black;
+      text-decoration: none;
+}
+body{
+      background-color: white;
+      font-family: sans-serif;
+      margin: auto;
+}
+.quote{
+      border: 2px solid var(--primary);
+      padding: 6px 10px;
+      font-size: 0.9rem;
+      border-radius: 1000px;
+      color: var(--primary) !important;
+      transition: all 0.1s ease;
+}
+.quote:hover{
+      background-color: var(--primary);
+      color: white !important;
+      border-color: #fff;
+      cursor: pointer;
+}
+
+
+
+/* Navbar */
+.nav1, .nav2{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgb(223, 223, 223);
+      color: var(--gray-text);
+      height: 50px;
+      border-radius: 5px;
+}
+.nav1-left{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 30%;
+}
+.nav1-right{
+      width: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.nav1-right a{
+      color: var(--gray-text);
+}
+
+
+/* nav2 */
+.nav2{
+      background-color: white;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.117);
+      height: 100px;
+}
+.nav2-left{
+      color: var(--primary);
+}
+.nav2-left span{
+      color: rgb(106, 85, 170);
+}
+.nav2-right{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+}
+.nav2-right > div:nth-child(1){
+      width: 75%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+
+/* hero */
+.hero{
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 10rem;
+}
+.hero-left{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 40%;
+}
+.hero-left h3{
+      color: var(--primary);
+}
+.hero-left h1{
+      font-weight: 900;
+      font-size: 3rem;
+}
+.hero-left p{
+      color: var(--gray-text);
+      line-height: 2;
+}
+.hero-left a{
+      max-width: max-content;
+}
+.hero-right{
+      width: 30%;
+}
+.hero-right > img{
+      max-width: 100%;
+}
