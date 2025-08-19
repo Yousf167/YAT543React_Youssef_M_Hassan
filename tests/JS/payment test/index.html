@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stripe Test Payment</title>
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <button id="checkout-btn">Pay $50 (Test)</button>
+
+  <script>
+
+  const stripe = Stripe("pk_test_12345_YOUR_PUBLIC_KEY");
+
+  document.getElementById("checkout-btn").addEventListener("click", async () => {
+    const res = await fetch("http://localhost:4242/create-checkout-session", {
+      method: "POST",
+    });
+
+    const data = await res.json();
+
+    // Use sessionId here
+    const result = await stripe.redirectToCheckout({ sessionId: data.sessionId });
+
+    if (result.error) {
+      console.error(result.error.message);
+    }
+  });
+
+
+  </script>
+</body>
+</html>

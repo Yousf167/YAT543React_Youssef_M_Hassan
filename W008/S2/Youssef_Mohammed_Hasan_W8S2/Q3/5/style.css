@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+body{
+      height: 100vh;
+}
+.row{
+      width: 100% !important;
+      justify-content: center !important;
+}
+button{
+      height: 70px !important;
+}
+#display{
+      height: 60px !important;
+      font-size: 2rem !important;
+}

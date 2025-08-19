@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <!-- Bootstrap.min.css CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark d-flex justify-content-center align-items-center">
+      <div class="bg-white w-25 p-3 d-flex align-items-center justify-content-center flex-column rounded-4" id="calculator">
+            <input type="text" id="display" class="form-control bg-black border-0 text-white" readonly>
+            <div class="row mt-4">
+                  <!-- first row -->
+                  <div class="col-3 p-1"><button class="btn btn-secondary w-100" onclick="Clear()"> C </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-secondary w-100" onclick="append('/')"> / </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-secondary w-100" onclick="append('*')"> x </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-secondary w-100" onclick="clearLast()"> < </button></div>
+            
+                  <!-- second row -->
+                  <div class="col-3 p-1"><button class="btn btn-dark w-100" onclick="append('7')"> 7 </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-dark w-100" onclick="append('8')"> 8 </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-dark w-100" onclick="append('9')"> 9 </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-secondary w-100" onclick="append('-')"> - </button></div>
+                  
+                  <!-- third row -->
+                  <div class="col-3 p-1"><button class="btn btn-dark w-100" onclick="append('4')"> 4 </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-dark w-100" onclick="append('5')"> 5 </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-dark w-100" onclick="append('6')"> 6 </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-secondary w-100" onclick="append('+')"> + </button></div>
+
+
+                  <!-- Fourth row -->
+                  <div class="col-3 p-1"><button class="btn btn-dark w-100" onclick="append('1')"> 1 </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-dark w-100" onclick="append('2')"> 2 </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-dark w-100" onclick="append('3')"> 3 </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-info w-100" onclick="calc()"> = </button></div>
+
+                  <!-- fifth row -->
+                  <div class="col-6 p-1"><button class="btn btn-dark w-100" onclick="append('0')"> 0 </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-dark w-100" onclick="append('.')"> . </button></div>
+                  <div class="col-3 p-1"><button class="btn btn-dark w-100"> :) </button></div>
+                  
+            </div>
+      </div>
+
+
+
+      <!-- Bootstrap.min.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js" integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- custom JS -->
+      <script src="script.js"></script>
+</body>
+</html>
