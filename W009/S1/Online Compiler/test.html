@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini Online JS Compiler</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Optional: Babel Standalone for TS/JSX transpile in-browser -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Mini Online JS Compiler • Browser Sandbox</h1>
+    <span class="kbd">Ctrl/Cmd + Enter</span>
+  </header>
+
+  <div class="wrap">
+    <section class="left">
+      <div class="toolbar">
+        <button id="runBtn">Run ▶</button>
+        <button id="clearBtn">Clear Console</button>
+        <button id="resetBtn">Reset Example</button>
+        <label title="Transpile TypeScript/JSX to JS using Babel in the browser."><input id="babelToggle" type="checkbox"> Use Babel (TS/JSX)</label>
+      </div>
+      <div class="editor">
+        <textarea id="code" spellcheck="false"></textarea>
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="panel">
+        <h3>Preview (sandboxed iframe, ESM enabled)</h3>
+        <iframe id="preview" sandbox="allow-scripts"></iframe>
+      </div>
+      <div class="panel">
+        <h3>Console</h3>
+        <div id="console" class="console" aria-live="polite"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="test.js">  </script>
+</body>
+</html>
