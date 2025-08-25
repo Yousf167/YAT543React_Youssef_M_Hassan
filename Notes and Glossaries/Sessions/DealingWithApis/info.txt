@@ -1,0 +1,16 @@
+Event Loop
+    - Ensure tasks excuted in the correct order
+
+    one task at a time
+
+
+    sync 
+    microtasks (promises)
+    timers(setimeout , setInerval)
+    filesystem i/o callbacks 
+    setImmediate callbacks
+    socket.io
+
+    
+map() => higher order function
+ return array

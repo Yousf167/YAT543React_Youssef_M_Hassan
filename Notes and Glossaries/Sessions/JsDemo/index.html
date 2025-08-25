@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Demo</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-dark py-3 text-center text-white">
+        <h1> Notes App </h1>
+    </header>
+
+    <section class="w-50 mx-auto my-5 container">
+        <h3> + Add New Note</h3>
+        <form>
+            <div class="form-group">
+                <label for="title" class="fw-bold" hidden>
+                    Note Title</label>
+                <input type="text" id="title" 
+                class="form-control py-3" 
+                placeholder="Note Title">
+            </div>
+            <div class="form-group mt-3">
+                <label for="title" class="fw-bold" hidden>
+                    Note Description</label>
+                <textarea id="desc" 
+                class="form-control py-3" 
+                placeholder="Note Description"></textarea>
+            </div>
+            <input type="submit" value="Add Note" class="btn btn-dark mt-2">
+        </form>
+    </section>
+
+    <section class="my-5 text-center w-50 mx-auto container">
+        <div class="row d-flex justify-content-center">
+            
+        </div>
+    </section>
+
+
+    
+    <script src="./main.js"></script>
+</body>
+</html>

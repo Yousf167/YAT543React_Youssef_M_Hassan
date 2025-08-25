@@ -1,0 +1,7 @@
+Api => Application Programming Interface
+Json => Javascript Object Notation
+    "{
+        "id" : 1 , 
+        "name" : "Kero"
+    }"
+   
