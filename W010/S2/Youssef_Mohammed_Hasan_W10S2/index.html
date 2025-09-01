@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css"
+            integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+      <section class="container pt-5 mt-5">
+            <form action="" class="form-control row" novalidate>
+                  <label for="instructorN">Instructor name</label>
+                  <input type="text" name="inst" id="instructorN">
+
+                  <label for="courseN">Course name</label>
+                  <input type="text" name="cn" id="courseN">
+
+                  <label for="price">Price</label>
+                  <input type="number" name="p" id="price">
+
+                  <label for="desc">Description</label>
+                  <textarea name="" id="desc"></textarea>
+
+                  <input class="mt-3" type="submit" value="Add Course" id="submit">
+            </form>
+      </section>
+
+      <section class="container mt-5 pt-5">
+            <table class="table table-bordered ">
+                  <thead>
+                        <th>Instructor Name</th>
+                        <th>Course Name</th>
+                        <th>Course Price</th>
+                        <th>Description</th>
+                  </thead>
+                  <tbody id="tb">
+                        <!-- Insert Here -->
+                  </tbody>
+            </table>
+      </section>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"
+            integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./script.js"></script>
+</body>
+
+</html>
