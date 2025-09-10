@@ -5,6 +5,9 @@
 body{
       font-family: "Montserrat", sans-serif;
 }
+section{
+      min-height: min-content;
+}
 ::selection{
       background-color: #ff3369;
       color: white;

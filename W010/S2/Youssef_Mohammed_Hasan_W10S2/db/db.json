@@ -1,3 +1,25 @@
 {
-  "courses": []
+  "courses": [
+    {
+      "id": "cc20",
+      "in": "kj;hphi;hp",
+      "cn": "phihpggu",
+      "cp": 767,
+      "desc": "kgougougou"
+    },
+    {
+      "id": "b26d",
+      "in": "oigllgllllljhljb",
+      "cn": "ogoufhyflkg",
+      "cp": 9767,
+      "desc": "khgfhlfhfi"
+    },
+    {
+      "id": "58b7",
+      "in": "lkh;kh;khk;h",
+      "cn": "ljgljgljglj",
+      "cp": 35,
+      "desc": "jgogou"
+    }
+  ]
 }

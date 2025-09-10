@@ -1,219 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Bootstrap.min.css -->
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <!-- Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <!-- FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- bootstrap icons -->
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
-    />
-    <!-- no favicon fix (intentionally dont have a favicon) -->
-    <link rel="icon" href="data:,">
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg p-3 position-fixed w-100 z-3 top-0" id="navbar">
-      <div class="container w-75">
-        <div class="navbar-brand fs-4 fw-bolder">
-          <img src="./godocs-bootstrap-main/source/images/logo.png" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Bootstrap.min.css -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+  <!-- no favicon fix (intentionally dont have a favicon) -->
+  <link rel="icon" href="data:,">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg p-3 position-fixed w-100 z-3 top-0" id="navbar">
+    <div class="container w-75">
+      <div class="navbar-brand fs-4 fw-bolder">
+        <img src="./godocs-bootstrap-main/source/images/logo.png" alt="" />
+      </div>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <i class="bi bi-text-right fs-3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav mx-auto w-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inner Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Search Page</a>
+          </li>
+        </ul>
+        <button class="btn me-2 btn-outline-primary mt-3">Changelog</button>
+        <button class="btn bg-primary text-white mt-3">Contact</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="mt-5 pt-5 flex-column d-flex justify-content-center align-items-center">
+    <div class="pt-5 mt-5 container row justify-content-between align-items-center">
+      <div
+        class="d-flex flex-column justify-content-center align-items-lg-start col-lg-7 text-lg-start col-md-12 text-center align-items-center ">
+        <h1 class="mt-5 mb-4 fw-bolder h1">
+          Documentation Theme <br />
+          By Themefisher Team
+        </h1>
+        <p class="lh-lg">
+          Lorem ipsum dolor amet, consetetur sadiffspscing elitr, diam nonumy
+          invidunt <br />
+          ut labore et dolore magna aliquyam erat, sed diam voluptua At.
+        </p>
+
+        <form action="" class="shadow w-100 rounded-3 d-flex align-items-center justify-content-between p-2">
+          <input class="form-text border-0 w-75 h-100 rounded-2 p-3" type="text" name="" id=""
+            placeholder="Search Here..." />
+          <button class="btn bg-primary text-white position-relative fw-bolder" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+      <div class="col-lg-3 d-lg-block d-none">
+        <img src="./godocs-bootstrap-main/theme/images/banner.jpg" alt="">
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="mt-5 pt-5">
+    <div class="container">
+      <h2 class="fw-bolder h2 mb-5">Browse Your Topics</h2>
+      <div class="custom-card-container row gap-3">
+        <div class="d-flex col-12 col-md-5 col-lg-2-5 rounded-3 justify-content-end flex-column hover-shadow py-2 px-2">
+          <i class="bi bi-sliders bg-primary text-white custom-i-width fs-3 text-center rounded-3 mb-3"></i>
+          <h3 class="fw-bolder fs-4">Basic Startup</h3>
+          <p>Cras at dolor eget urna varius faucibus tempus in elit sit amet</p>
         </div>
-
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navCollapse"
-        >
-          <i class="bi bi-text-right fs-3"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navCollapse">
-          <ul class="navbar-nav mx-auto w-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Inner Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Search Page</a>
-            </li>
-          </ul>
-          <button class="btn me-2 btn-outline-primary mt-3">Changelog</button>
-          <button class="btn bg-primary text-white mt-3">Contact</button>
+        <div class="d-flex col-12 col-md-5 col-lg-2-5 rounded-3 justify-content-end flex-column hover-shadow py-2 px-2">
+          <i class="bi bi-credit-card-fill bg-primary text-white custom-i-width fs-3 text-center rounded-3 mb-3"></i>
+          <h3 class="fw-bolder fs-4">Account Bill</h3>
+          <p>Cras at dolor eget urna varius faucibus tempus in elit sit amet</p>
+        </div>
+        <div class="d-flex col-12 col-md-5 col-lg-2-5 rounded-3 justify-content-end flex-column hover-shadow py-2 px-2">
+          <i class="bi bi-box-seam-fill bg-primary text-white custom-i-width fs-3 text-center rounded-3 mb-3"></i>
+          <h3 class="fw-bolder fs-4">Our Features</h3>
+          <p>Cras at dolor eget urna varius faucibus tempus in elit sit amet</p>
+        </div>
+        <div class="d-flex col-12 col-md-5 col-lg-2-5 rounded-3 justify-content-end flex-column hover-shadow py-2 px-2">
+          <i class="bi bi-gear-fill bg-primary text-white custom-i-width fs-3 text-center rounded-3 mb-3"></i>
+          <h3 class="fw-bolder fs-4"> Theme Facility</h3>
+          <p>Cras at dolor eget urna varius faucibus tempus in elit sit amet</p>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
 
-    <section class="mt-5 pt-5 flex-column d-flex justify-content-center align-items-center">
-      <div class="pt-5 mt-5 container row justify-content-between align-items-center">
-        <div class="d-flex flex-column justify-content-center align-items-lg-start col-lg-7 text-lg-start col-md-12 text-center align-items-center ">
-          <h1 class="mt-5 mb-4 fw-bolder h1">
-            Documentation Theme <br />
-            By Themefisher Team
-          </h1>
-          <p class="lh-lg">
-            Lorem ipsum dolor amet, consetetur sadiffspscing elitr, diam nonumy
-            invidunt <br />
-            ut labore et dolore magna aliquyam erat, sed diam voluptua At.
-          </p>
-  
-          <form
-            action=""
-            class="shadow w-100 rounded-3 d-flex align-items-center justify-content-between p-2"
-          >
-            <input
-              class="form-text border-0 w-75 h-100 rounded-2 p-3"
-              type="text"
-              name=""
-              id=""
-              placeholder="Search Here..."
-            />
-            <button
-              class="btn bg-primary text-white position-relative fw-bolder"
-              type="submit"
-            >
-              Search
-            </button>
-          </form>
+  <section class="mt-5 pt-5">
+    <div class="container mt-5 pt-5">
+      <h2 class="fw-bolder h2 mb-5">Most Asked Questions</h2>
+      <div class="row" id="masonry-container">
+        <div class="masonry-item col-12 col-md-5 rounded-2 hover-shadow p-4 mb-2 m-md-2">
+          <h3 class="fw-bolder fs-4">Will updates also be free?</h3>
+          <p>Lorem, link ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores
+            quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste
+            placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo,
+            unde cum omnis vel sed temporibus. mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore
+            reprehenderit illo, unde cum omnis vel sed temporibus. mollitia delectus ut ab quibusdam. Magnam cumque
+            numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus.</p>
         </div>
-        <div class="col-lg-3 d-lg-block d-none">
-          <img src="./godocs-bootstrap-main/theme/images/banner.jpg" alt="">
+        <div class="masonry-item col-12 col-md-5 rounded-2 hover-shadow p-4 mb-2 m-md-2">
+          <h3 class="fw-bolder fs-4">Discounts for students and Non Profit Organizations?</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia
+            sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste
+            placeat architecto.</p>
         </div>
-      </div>
-      
-    </section>
-
-
-    <section class="mt-5 pt-5">
-      <div class="container">
-        <h2 class="fw-bolder h2 mb-5">Browse Your Topics</h2>
-        <div class="custom-card-container row gap-3">
-          <div class="d-flex col-12 col-md-5 col-lg-2-5 rounded-3 justify-content-end flex-column hover-shadow py-2 px-2">
-            <i class="bi bi-sliders bg-primary text-white custom-i-width fs-3 text-center rounded-3 mb-3"></i>
-            <h3 class="fw-bolder fs-4">Basic Startup</h3>
-            <p>Cras at dolor eget urna varius faucibus tempus in elit sit amet</p>
-          </div>
-          <div class="d-flex col-12 col-md-5 col-lg-2-5 rounded-3 justify-content-end flex-column hover-shadow py-2 px-2">
-            <i class="bi bi-credit-card-fill bg-primary text-white custom-i-width fs-3 text-center rounded-3 mb-3"></i>
-            <h3 class="fw-bolder fs-4">Account Bill</h3>
-            <p>Cras at dolor eget urna varius faucibus tempus in elit sit amet</p>
-          </div>
-          <div class="d-flex col-12 col-md-5 col-lg-2-5 rounded-3 justify-content-end flex-column hover-shadow py-2 px-2">
-            <i class="bi bi-box-seam-fill bg-primary text-white custom-i-width fs-3 text-center rounded-3 mb-3"></i>
-            <h3 class="fw-bolder fs-4">Our Features</h3>
-            <p>Cras at dolor eget urna varius faucibus tempus in elit sit amet</p>
-          </div>
-          <div class="d-flex col-12 col-md-5 col-lg-2-5 rounded-3 justify-content-end flex-column hover-shadow py-2 px-2">
-            <i class="bi bi-gear-fill bg-primary text-white custom-i-width fs-3 text-center rounded-3 mb-3"></i>
-            <h3 class="fw-bolder fs-4"> Theme Facility</h3>
-            <p>Cras at dolor eget urna varius faucibus tempus in elit sit amet</p>
-          </div>
+        <div class="masonry-item col-12 col-md-5 rounded-2 hover-shadow p-4 mb-2 m-md-2">
+          <h3 class="fw-bolder fs-4">Is there any documentation and support?</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia
+            sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste
+            placeat architecto, mollitia delectus link ut ab quibusdam.</p>
+        </div>
+        <div class="masonry-item col-12 col-md-5 rounded-2 hover-shadow p-4 mb-2 m-md-2">
+          <h3 class="fw-bolder fs-4">I need something unique, Can you make it?</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia
+            sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste
+            placeat architecto, mollitia delectus link ut ab quibusdam. Magnam cumque numquam tempore reprehenderit
+            illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod
+            suscipit fuga necessitatibus. Perferendis, ipsum?</p>
+        </div>
+        <div class="masonry-item col-12 col-md-5 rounded-2 hover-shadow p-4 mb-2 m-md-2">
+          <h3 class="fw-bolder fs-4">What is a product key?</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia
+            sapiente totam omnis vel sequi corporis ipsa incidunt</p>
+        </div>
+        <div class="masonry-item col-12 col-md-5 rounded-2 hover-shadow p-4 mb-2 m-md-2">
+          <h3 class="fw-bolder fs-4">Any refunds?</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia
+            sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste
+            placeat architecto.</p>
         </div>
       </div>
-    </section>
-    
+    </div>
+  </section>
 
-    <section class="mt-5 pt-5">
-      <div class="container">
-        <h2 class="fw-bolder h2 mb-5">Most Asked Questions</h2>
-        <div class="qa h-100">
-          <div class="qa-card rounded-2 hover-shadow p-4 my-3">
-            <h3 class="fw-bolder fs-4">Will updates also be free?</h3>
-            <p>Lorem, link ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus. mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus. mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus.</p>
-          </div>
-          <div class="qa-card rounded-2 hover-shadow p-4 my-3">
-            <h3 class="fw-bolder fs-4">Discounts for students and Non Profit Organizations?</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto.</p>
-          </div>
-          <div class="qa-card rounded-2 hover-shadow p-4 my-3">
-            <h3 class="fw-bolder fs-4">Is there any documentation and support?</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus link ut ab quibusdam.</p>
-          </div>
-          <div class="qa-card rounded-2 hover-shadow p-4 my-3">
-            <h3 class="fw-bolder fs-4">I need something unique, Can you make it?</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus link ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum?</p>
-          </div>
-          <div class="qa-card rounded-2 hover-shadow p-4 my-3">
-            <h3 class="fw-bolder fs-4">What is a product key?</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt</p>
-          </div>
-          <div class="qa-card rounded-2 hover-shadow p-4 my-3">
-            <h3 class="fw-bolder fs-4">Any refunds?</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto.</p>
-          </div>
+
+  <section class="mt-5 pt-5">
+    <div class="container d-flex align-items-center justify-content-between mt-5 pt-5">
+      <div class="d-none d-lg-block col-lg-3">
+        <img src="./godocs-bootstrap-main/theme/images/cta-illustration.jpg" alt="">
+      </div>
+      <div
+        class="col-12 col-lg-7 d-flex flex-column align-items-center justify-content-center align-items-lg-start justify-content-lg-start">
+        <h2 class="text-lg-start h2 text-center">Still Didn't Find Find Your Answer?</h2>
+        <p class="text-lg-start text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br>
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+        <button class="btn bg-primary py-3 text-white">Submit A Ticket</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mt-5 pt-5">
+    <div
+      class="container border-bottom mt-5 pt-5 d-flex flex-column align-tiems-center justify-content-center gap-4 flex-lg-row align-items-center justify-content-lg-between">
+      <div class="text-center mx-5 d-flex justify-content-center gap-4 col-3">
+        <div>
+          <a href="">Changelog</a>
+        </div>
+        <div>
+          <a href="">Contact</a>
+        </div>
+        <div>
+          <a href="">Search</a>
         </div>
       </div>
-    </section>
-
-
-    <section class="mt-5 pt-5">
-      <div class="container d-flex align-items-center justify-content-between mt-5 pt-5">
-        <div class="d-none d-lg-block col-lg-3">
-          <img src="./godocs-bootstrap-main/theme/images/cta-illustration.jpg" alt="">
-        </div>
-        <div class="col-12 col-lg-7 d-flex flex-column align-items-center justify-content-center align-items-lg-start justify-content-lg-start">
-          <h2 class="text-lg-start h2 text-center">Still Didn't Find Find Your Answer?</h2>
-          <p  class="text-lg-start text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
-          <button class="btn bg-primary py-3 text-white">Submit A Ticket</button>
-        </div>
+      <div class="d-flex justify-content-center col-3">
+        <img src="./godocs-bootstrap-main/source/images/logo.png" alt="" srcset="">
       </div>
-    </section>
+      <div class="d-flex justify-content-center text-primary gap-2 col-3 mb-4">
+        <i class="bi bi-facebook px-2 py-1 fs-5 bg-primary text-white rounded-2"></i>
+        <i class="bi bi-twitter  px-2 py-1 fs-5 bg-primary text-white rounded-2"></i>
+        <i class="bi bi-github   px-2 py-1 fs-5 bg-primary text-white rounded-2"></i>
+        <i class="bi bi-linkedin px-2 py-1 fs-5 bg-primary text-white rounded-2"></i>
+      </div>
+    </div>
+  </section>
+  <footer class="pt-5">
+    <p class="text-center">Copyright &copy; 2020 a hugo theme by themefisher</p>
+  </footer>
 
+  <!-- Popper.js, Bootstrap.js and customJS.js -->
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="customJS.js"></script>
+  <!-- Masonry CDN and init -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const container = document.querySelector('#masonry-container');
+      const masonry = new Masonry(container, {
+        itemSelector: '.masonry-item',
+        columnWidth: '.masonry-item',
+        percentPosition: true
+      });
+    });
+  </script>
+</body>
 
-    <section class="mt-5 pt-5"> 
-      <div class="container border-bottom mt-5 pt-5 d-flex flex-column align-tiems-center justify-content-center gap-4 flex-lg-row align-items-center justify-content-lg-between">
-        <div class="text-center mx-5 d-flex justify-content-center gap-4 col-3">
-          <div>
-            <a href="">Changelog</a>
-          </div>
-          <div>
-            <a href="">Contact</a>
-          </div>
-          <div>
-            <a href="">Search</a>
-          </div>
-        </div>
-        <div class="d-flex justify-content-center col-3">
-          <img src="./godocs-bootstrap-main/source/images/logo.png" alt="" srcset="">
-        </div>
-        <div class="d-flex justify-content-center text-primary gap-2 col-3 mb-4">
-          <i class="bi bi-facebook px-2 py-1 fs-5 bg-primary text-white rounded-2"></i>
-          <i class="bi bi-twitter  px-2 py-1 fs-5 bg-primary text-white rounded-2"></i>
-          <i class="bi bi-github   px-2 py-1 fs-5 bg-primary text-white rounded-2"></i>
-          <i class="bi bi-linkedin px-2 py-1 fs-5 bg-primary text-white rounded-2"></i>
-        </div> 
-      </div>    
-    </section>
-    <footer class="pt-5">
-      <p class="text-center">Copyright &copy; 2020 a hugo theme by themefisher</p>
-    </footer>
-
-    <!-- Popper.js, Bootstrap.js and customJS.js -->
-    <script src="customJS.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-  </body>
 </html>
