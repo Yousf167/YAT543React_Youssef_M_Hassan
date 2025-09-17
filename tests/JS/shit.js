@@ -82,13 +82,16 @@ const inventory = [
       { name: "cherries", type: "fruit" },
       { name: "fish", type: "meat" },
 ];
-console.log(Object.groupBy(inventory, ({type}) => type));
+console.log(Object.groupBy(inventory, ({ type }) => type));
 console.log();
 
 
 let s = 'a126343bc6092435e'
-let res = s.split('').map((c) => {
-      if(!isNaN(+c)) c = 'x'
-      return c
-}).join('')
+let res = s.split('').map((c) => !isNaN(+c) ? c = '' : c).join('')
 console.log(res);
+s["a"] = "Hello"
+console.log(s["a"]);
+console.log(s);
+
+
+
