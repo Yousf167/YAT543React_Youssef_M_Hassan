@@ -95,3 +95,20 @@ console.log(s);
 
 
 
+function factorial(){
+      let cache = {}
+      return function fact(num){
+            if(num in cache){
+                  return cache[num]
+            }
+            cache[num] = num === 0 ? 1 : num * fact(num - 1)
+            return cache[num]
+      }
+}
+
+const factHandler = factorial()
+console.log(factHandler(7));
+console.log(factHandler(2));
+console.log(factHandler(7));
+console.log(factHandler(8));
+console.log(factHandler);

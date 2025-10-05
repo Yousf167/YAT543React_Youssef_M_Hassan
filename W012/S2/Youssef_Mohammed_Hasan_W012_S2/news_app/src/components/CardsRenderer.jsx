@@ -2,51 +2,23 @@ import { useEffect, useState } from "react";
 import NewsCard from "./NewsCard";
 
 function CardsRenderer({ API }) {
-  const [articles, setArticles] = useState([]);
-  const [nextPage, setNextPage] = useState(null);
-  const [loading, setLoading] = useState(false);
-
-  const fetchArticles = (url) => {
-    if (loading) return;
-    setLoading(true);
-
-    fetch(url)
-      .then((res) => res.json())
-      .then((body) => {
-        setArticles((prev) => {``
-          // Deduplicate by article.article_id (or other unique field)
-          const existingIDs = new Set(prev.map((a) => a.article_id));
-          const newArticles = body.results.filter(
-            (a) => !existingIDs.has(a.article_id)
-          );
-          return [...prev, ...newArticles];
-        });
-        setNextPage(body.nextPage || null);
-      })
-      .catch((err) => console.error(err))
-      .finally(() => setLoading(false));
-  };
-
-  // Initial load
+  const [articles, setArticles] = useState(0);
+  const [APIRes, setAPIRes] = useState()
+  
+  
+  setAPIRes(
+    fetch(API)
+    .then(res => res.body)
+    .catch(e => console.log(e)))
   useEffect(() => {
-    fetchArticles(API);
-  }, [API]);
+    console.log(APIRes);
+    
+    setArticles(APIRes)
+  }, [articles, API, APIRes])
 
-  // Scroll listener
-  useEffect(() => {
-    const handleScroll = () => {
-      const bottom =
-        window.innerHeight + window.scrollY >=
-        document.body.offsetHeight;
-
-      if (bottom && nextPage) {
-        fetchArticles(`${API}&page=${nextPage}`);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [API, nextPage, loading]);
+  function nextPage(){
+    
+  }
 
   return (
     <>
@@ -57,14 +29,11 @@ function CardsRenderer({ API }) {
           </div>
         ))}
       </div>
-
-      {loading && (
-        <div className="w-full flex justify-center items-center mt-5 mb-[1000px]">
-          <p className="text-center text-white rounded-full bg-sky-600 mx-auto px-3 py-1">
-            Loading more...
-          </p>
-        </div>
-      )}
+      <div className="w-full flex items-center justify-center h-52">
+        <button className="rounded-4xl border-2 border-blue-500">
+          Next Page
+        </button>
+      </div>
     </>
   );
 }

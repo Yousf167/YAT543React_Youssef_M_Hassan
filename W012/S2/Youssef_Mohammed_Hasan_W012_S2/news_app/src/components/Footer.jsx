@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <footer className="bottom-0 fixed w-full bg-blue-900 text-white h-21 overflow-hidden">
+      <footer className="fixed bottom-0 w-full bg-blue-900 text-white h-21 overflow-hidden">
         <div className="flex items-center h-full">
           <div 
             className="flex whitespace-nowrap"
@@ -26,7 +26,6 @@ function Footer() {
                 Copyright © Youssef Mohammed 2025 all rights reserved 😉
               </span>
             </div>
-            {/* Duplicate content for seamless loop */}
             <div className="flex">
               <span className="px-8 text-lg font-medium">
                 Copyright © Youssef Mohammed 2025 all rights reserved 😉

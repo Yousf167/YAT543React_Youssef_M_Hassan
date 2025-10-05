@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+
+<body>
+
+      <script>
+            function confirmWild(name1, name2) {
+                  confirm("Are you wild?") ? alert(name1) : alert(name2)
+            }
+
+            if (confirm("Do you fly?")) {
+                  confirmWild('Eagle', "Parrot")
+            }
+            else {
+                  if (confirm("Do you live under the sea?")) {
+                        confirmWild('Shark', 'Dolphin')
+                  }
+                  else {
+                        confirmWild('Lion', 'Cat')
+                  }
+            }
+      </script>
+</body>
+
+</html>
