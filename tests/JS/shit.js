@@ -24,24 +24,32 @@ for (let index in arr) {
 }
 
 
-function timeFunc(func, iterations) {
-      let sum = 0
-      for (let i = 0; i <= iterations; i++) {
-            const start = performance.now()
-            func()
-            sum += performance.now() - start;
+function benchmark(func, {
+      iterations = 1e5,
+      batches = 10,
+      warmup = 1000
+} = {}) {
+      // Warm-up phase to allow JIT optimization
+      for (let i = 0; i < warmup; i++) func();
+
+      let results = [];
+
+      for (let b = 0; b < batches; b++) {
+            const start = performance.now();
+            for (let i = 0; i < iterations; i++) func();
+            const end = performance.now();
+            results.push((end - start) / iterations); // average per iteration (ms)
       }
-      return sum / iterations
+
+      const min = Math.min(...results);
+      const max = Math.max(...results);
+      const avg = results.reduce((a, b) => a + b, 0) / results.length;
+
+      return { min, avg, max };
 }
 
-// console.log(timeFunc(() => {
-//      const s = "abcdefghijklmnopqrstuvwxyz"
-//      for (let i = 0, j = s.length - 1; i < j; i++, j--) {
-//            const temp = s[i]
-//            s[i] = s[j]
-//            s[j] = temp
-//      }
-// }, 100000));
+
+
 
 
 let x = (function () {
@@ -95,10 +103,10 @@ console.log(s);
 
 
 
-function factorial(){
+function factorial() {
       let cache = {}
-      return function fact(num){
-            if(num in cache){
+      return function fact(num) {
+            if (num in cache) {
                   return cache[num]
             }
             cache[num] = num === 0 ? 1 : num * fact(num - 1)
@@ -112,3 +120,24 @@ console.log(factHandler(2));
 console.log(factHandler(7));
 console.log(factHandler(8));
 console.log(factHandler);
+
+
+
+function traverse(arr, callback) {
+      for (let i = 0; i < arr.length; i++) callback(i)
+}
+
+arr = [1, 2, 3, 4, 5]
+traverse(arr, (i) => {
+      arr[i] = 0
+})
+traverse(arr, (i) => console.log(arr[i]))
+
+
+function fib(n) {
+      if (n == 0) return 0;
+      if (n == 1) return 1;
+      else return fib(n - 2) + fib(n - 1);
+}
+
+console.log(benchmark(() => fib(24), { iterations: 1000, batches: 10, warmup: 10 }));
